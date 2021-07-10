@@ -1,19 +1,17 @@
-# NVIDIA FE
+# 💳 NVIDIA FE 💳
 > Fast way to buy NVIDIA Founder Edition Cards before out of stock
 
 /!\ This script work only for the french nvidia affiliate shop LDLC /!\
 
-NVIDIA FE checks inventory every second in Founder's Edition cards,
-lowest at the highest price.
+NVIDIA FE checks inventory every second in Founder's Edition cards.
 
-If it finds a card, it automatically opens a new tab in your default browser
-on the right page.
+> Original project by [ermos](https://github.com/ermos/nvidia-fe)
 
-## Install
+## Install 📁
 
 1) Download this repository :
 ```bash
-git clone git@github.com:ermos/nvidia-fe.git
+git clone git@github.com:Francesco-fr/nvidia-fe.git
 ```
 
 2) Install dependencies :
@@ -27,6 +25,6 @@ npm install
 npm run start
 ```
 
-## No sound ?
+## No sound ? 🔊
 
 If you are a windows user, you need to install the library [mplay](http://www.mplayerhq.hu/)
