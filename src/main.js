@@ -1,5 +1,4 @@
 const axios = require('axios')
-const open = require('open')
 const player = require('play-sound')();
 
 const url = "https://api.nvidia.partners/edge/product/search" +
@@ -9,8 +8,6 @@ const url = "https://api.nvidia.partners/edge/product/search" +
     "&manufacturer=NVIDIA" +
     "&manufacturer_filter=NVIDIA~6,ACER~0,ALIENWARE~0,AORUS~0,ASUS~0,DELL~0,EVGA~0,GAINWARD~0,GIGABYTE~0,HP~0,INNO3D~0,MSI~0,PALIT~0,PNY~0,RAZER~0,ZOTAC~0" +
     "&sorting=lp" +
-    "&price=84,749" +
-    "&price_filter=84,5341" +
     `&disable_cache=${new Date().getTime()}`
 
 call()
@@ -37,7 +34,6 @@ async function call() {
                     console.log(`\x1b[32m[${dateText}] ${product.displayName} => STOCK !!!!\x1b[0m`)
 
                     if (!find) {
-                        open(retailer.purchaseLink + "?a")
 
                         let sound = player.play('./src/alarm.mp3', (err) => {
                             if (err) console.log(`Could not play sound: ${err}`);
